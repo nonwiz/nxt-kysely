@@ -12,6 +12,6 @@
 
 Generate interfaces from the table
 ```bash
-kysely-codegen --out-file ./db/model.ts
+kysely-codegen --out-file ./kysely/model.ts
 ```
 

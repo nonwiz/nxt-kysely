@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@/db":  [
+        "db/kysely.ts"
+      ],
+      "@/db/*": [
+        "db/*"
+      ]
+    },
     "lib": [
       "dom",
       "dom.iterable",

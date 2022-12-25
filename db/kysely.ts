@@ -1,10 +1,10 @@
 import {Kysely, PostgresDialect} from "kysely";
 import { Pool } from 'pg'
 import Cursor from 'pg-cursor'
-import {DB} from "./db/model";
+import {DB} from "./model";
 
 
-export const db = new Kysely<DB>({
+export const kysely = new Kysely<DB>({
     // PostgresDialect requires the Cursor dependency
     dialect: new PostgresDialect({
         pool: new Pool({
