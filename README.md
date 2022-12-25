@@ -1,4 +1,4 @@
-# SPI Next
+# Nxt + Kysely + Tailwind + Auth
 
 ## Tools
 
@@ -9,9 +9,8 @@
 - Tailwindcss
 
 ## DB
-
 Generate interfaces from the table
 ```bash
-kysely-codegen --out-file ./kysely/model.ts
+kysely-codegen --out-file ./db/model.ts
 ```
 

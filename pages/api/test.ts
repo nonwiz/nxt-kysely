@@ -1,12 +1,12 @@
 
 import type { NextApiRequest, NextApiResponse } from "next"
-import {kysely} from "@/db";
+import {db} from "@/db";
 
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
-    for await (const item of kysely.selectFrom('users').selectAll().stream()) {
+    for await (const item of db.selectFrom('users').selectAll().stream()) {
         console.log({item})
     }
 

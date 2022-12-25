@@ -1,0 +1,1 @@
+export const userPaths = ["email", "id", "name", "role"]

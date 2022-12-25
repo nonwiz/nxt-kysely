@@ -4,7 +4,7 @@ import Cursor from 'pg-cursor'
 import {DB} from "./model";
 
 
-export const kysely = new Kysely<DB>({
+export const db = new Kysely<DB>({
     // PostgresDialect requires the Cursor dependency
     dialect: new PostgresDialect({
         pool: new Pool({
@@ -17,5 +17,6 @@ export const kysely = new Kysely<DB>({
     }),
 
 })
+
 
 

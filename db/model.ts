@@ -32,11 +32,11 @@ export interface Sessions {
 
 export interface Users {
   created_at: Generated<Timestamp>;
-  email: string | null;
-  email_verified: Timestamp | null;
+  email: string;
   id: Generated<number>;
-  image: string | null;
   name: string | null;
+  password: string;
+  role: string;
   updated_at: Generated<Timestamp>;
 }
 
