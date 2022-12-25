@@ -23,7 +23,7 @@ export default function ProtectedPage() {
   // If no session exists, display access denied message
   if (!session) {
     return (
-      <Layout>
+      <Layout useAuth={false}>
         <AccessDenied />
       </Layout>
     )
@@ -31,7 +31,7 @@ export default function ProtectedPage() {
 
   // If session exists, display content
   return (
-    <Layout>
+    <Layout useAuth={true}>
       <h1>Protected Page</h1>
       <p>
         <strong>{content ?? "\u00a0"}</strong>

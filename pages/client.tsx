@@ -2,7 +2,7 @@ import Layout from "../components/layout"
 
 export default function ClientPage() {
   return (
-    <Layout>
+    <Layout useAuth={false}>
       <h1>Client Side Rendering</h1>
       <p>
         This page uses the <strong>useSession()</strong> React Hook in the{" "}

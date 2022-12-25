@@ -2,7 +2,7 @@ import Layout from "../components/layout"
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <Layout useAuth={false}>
       <h1 className={"bg-red-400"}>NextAuth.js Example</h1>
       <p>
         This is an example site to demonstrate how to use{" "}

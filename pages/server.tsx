@@ -3,13 +3,14 @@ import { authOptions } from "./api/auth/[...nextauth]"
 import Layout from "../components/layout"
 
 import type { GetServerSidePropsContext } from "next"
+// @ts-ignore
 import type { Session } from "next-auth"
 
 export default function ServerSidePage({ session }: { session: Session }) {
   // As this page uses Server Side Rendering, the `session` will be already
   // populated on render without needing to go through a loading stage.
   return (
-    <Layout>
+    <Layout useAuth={false}>
       <h1>Server Side Rendering</h1>
       <p>
         This page uses the <strong>unstable_getServerSession()</strong> method
