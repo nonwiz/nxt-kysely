@@ -1,32 +1,38 @@
 {
   "private": true,
-  "description": "An example project for NextAuth.js with Next.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
+  "description": "Nextjs + Kysely + Nextauth",
+  "repository": "https://github.com/nonwiz/nxt-kysely.git",
   "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
+    "url": "https://github.com/nonwiz/nxt-kysely/issues"
   },
-  "homepage": "https://next-auth-example.vercel.app",
+  "homepage": "https://nxt-kysely.vercel.app",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>"
-  ],
+  "author": "Nonwiz <nonwiz@pm.me>",
+  "contributors": [],
   "dependencies": {
+    "@types/pg-cursor": "^2.7.0",
+    "kysely": "^0.22.0",
+    "kysely-codegen": "^0.8.0",
+    "little-state-machine": "^4.8.0",
     "next": "latest",
     "next-auth": "latest",
     "nodemailer": "^6",
+    "pg": "^8.8.0",
+    "pg-cursor": "^2.7.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.1"
   },
   "devDependencies": {
     "@types/node": "^17",
     "@types/react": "^18.0.15",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4"
   }
 }
