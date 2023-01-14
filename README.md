@@ -1,4 +1,4 @@
-# Nxt + Kysely + Tailwind + Auth
+# NextAuth + PostgreSQK + Kysely + Tailwind + Credential Starter
 
 ## Tools
 
